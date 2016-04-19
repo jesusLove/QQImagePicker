@@ -100,7 +100,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
     return YES;
 }
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-//    if (sourceIndexPath.item != self.assetsArray.count && destinationIndexPath.item != self.assetsArray.count) {
         //取得item数据
         id objc = [self.assetsArray objectAtIndex:sourceIndexPath.item];
         //从资源数组中移除
@@ -108,11 +107,13 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
         //将数据插入到目标位置
         [self.assetsArray insertObject:objc atIndex:destinationIndexPath.item];
         NSLog(@" --- %ld", destinationIndexPath.item);
-//    }
 
 }
-
-
+/**
+ *  长按图片可以调整顺序
+ *
+ *  @param sender
+ */
 - (void)handleLongGesture:(UILongPressGestureRecognizer *)sender {
     switch (sender.state) {
         case UIGestureRecognizerStateBegan: {
@@ -151,7 +152,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
     }
 }
 - (void)addButtonAction {
-//    NSLog(@"点击添加按键");
     [self.delegate addButtonClicked];
 }
 - (void)deleteView:(id)sender {

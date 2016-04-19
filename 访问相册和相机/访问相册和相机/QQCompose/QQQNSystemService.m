@@ -25,7 +25,12 @@
     return upManager;
 }
 
-+(void)qq_uploadImage:(UIImage *)image token:(NSString *)token progress:(QNUpProgressHandler)progress success:(void (^)(NSString *))success failure:(void (^)())failure {
++(void)qq_uploadImage:(UIImage *)image
+                token:(NSString *)token
+               domain:(NSString *)domain
+             progress:(QNUpProgressHandler)progress
+              success:(void (^)(NSString *))success
+              failure:(void (^)())failure {
     UIImage *sizeImage = [QQQNSystemService qq_originImage:image scaleToSize:CGSizeMake(800, 900)];
     NSData *data = UIImageJPEGRepresentation(sizeImage, 0.3);
     if (!data) {
@@ -35,7 +40,7 @@
         return;
     }
     //只生成一次
-   QNUploadManager *upManager = [[self class] shareManager];
+    QNUploadManager *upManager = [[self class] shareManager];
     //显示上传的百分比
     QNUploadOption *uploadOption = [[QNUploadOption alloc] initWithMime:nil progressHandler:^(NSString *key, float percent) {
         NSLog(@"percent == %.2f", percent);
@@ -46,7 +51,7 @@
         
         
         if (info.statusCode == 200 && resp) {
-            NSString *url = [NSString stringWithFormat:@"%@/%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"domain"], resp[@"key"]];
+            NSString *url = [NSString stringWithFormat:@"%@/%@", domain, resp[@"key"]];
             NSLog(@"url === %@", url);
             if (success) {
                 success(url);
@@ -62,7 +67,7 @@
     
 }
 
-+ (void)qq_uploadImages:(NSArray *)imageArray token:(NSString *)token  progress:(void (^)(CGFloat))progress success:(void (^)(NSArray *))success failure:(void (^)())failure {
++ (void)qq_uploadImages:(NSArray *)imageArray token:(NSString *)token domain:(NSString *)domain  progress:(void (^)(CGFloat))progress success:(void (^)(NSArray *))success failure:(void (^)())failure {
     NSMutableArray *array = [NSMutableArray array];
     
     __block float totalProgress = 0.0f;
@@ -70,13 +75,14 @@
     __block NSUInteger currentIndex = 0;
     
     
-    
     QQQNUploadHelper *uploadHelper = [QQQNUploadHelper sharedInstance];
     __weak typeof(uploadHelper) weakHelper = uploadHelper;
+    
     uploadHelper.singleFailureBlock = ^() {
         failure();
         return ;
     };
+    
     uploadHelper.singleSuccessBlock = ^(NSString *url) {
         [array addObject:url];
         totalProgress += partProgress;
@@ -88,10 +94,10 @@
             success([array copy]);
             return ;
         } else {
-            [QQQNSystemService qq_uploadImage:imageArray[currentIndex] token:token progress:nil success:weakHelper.singleSuccessBlock failure:weakHelper.singleFailureBlock];
+            [QQQNSystemService qq_uploadImage:imageArray[currentIndex] token:token domain:domain progress:nil success:weakHelper.singleSuccessBlock failure:weakHelper.singleFailureBlock];
         }
     };
-    [QQQNSystemService qq_uploadImage:imageArray[0] token:token progress:nil success:weakHelper.singleSuccessBlock failure:weakHelper.singleFailureBlock];
+    [QQQNSystemService qq_uploadImage:imageArray[0] token:token domain:domain progress:nil success:weakHelper.singleSuccessBlock failure:weakHelper.singleFailureBlock];
     
 }
 //压缩上传图片的大小比例

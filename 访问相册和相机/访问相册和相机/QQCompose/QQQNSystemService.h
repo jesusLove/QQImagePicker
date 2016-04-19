@@ -13,15 +13,18 @@
 @property (nonatomic, strong) NSString *token;//需要的token
 @property (nonatomic, strong) NSString *domain;
 /**
- *  上传图片
+ *  上传单张图片
  *
  *  @param image    需要上传的图片
  *  @param progress 上传进度block
+ *  @param token    上传凭证
+ *  @param domain   上传的服务器地址
  *  @param success  成功block 返回URL地址
  *  @param failure  失败block
  */
 + (void)qq_uploadImage:(UIImage *)image
                  token:(NSString *)token
+                domain:(NSString *)domain
               progress:(QNUpProgressHandler)progress
                success:(void (^)(NSString *url))success
                failure:(void(^)())failure;
@@ -29,50 +32,19 @@
 /**
  *  上传多张图片, 按队列依次上传
  *
- *  @param imageArray
+ *  @param imageArray 图片数组
+ *  @param token    上传凭证
+ *  @param domain   上传的服务器地址
  *  @param progress
- *  @param success
+ *  @param success  成功返回 图片地址
  *  @param failure
  */
 + (void)qq_uploadImages:(NSArray *)imageArray
                   token:(NSString *)token
+                 domain:(NSString *)domain
                progress:(void (^)(CGFloat progress))progress
                 success:(void (^)(NSArray *array))success
                 failure:(void(^)())failure;
-/**
- *  获取token
- *
- *  @param success 成功返回token
- *  @param failure 失败
- */
-//+ (void)qq_qnUploadToken:(void(^)(NSString *token))success
-//                 failure:(void(^)())failure;
-
-
-/**
- *  获取七牛上传成功后的key
- *
- *  @param key     上传成功之后返回图片对应的key
- *  @param success 成功
- *  @param failure 失败
- */
-//+ (void)qq_qnUrlKey:(NSString *)key
-//            success:(void(^)(NSString *key))success
-//            failure:(void(^)())failure;
-
-
-/**
- *  获取七牛上传成功后服务器返回的url
- *
- *  @param keyArray key数组
- *  @param success  成功
- *  @param failure  失败
- */
-//+ (void)qq_qnUrlKeyArray:(NSArray *)keyArray
-//                 success:(void(^)(NSArray *array))success
-//                 failure:(void(^)())failure;
-
-
 /**
  *  将图片压缩为指定的比例
  *
