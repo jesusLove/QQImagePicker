@@ -14,8 +14,8 @@
 		4949C8B01CBDF003007E3D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4949C8AF1CBDF003007E3D8D /* Assets.xcassets */; };
 		4949C8B31CBDF003007E3D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4949C8B11CBDF003007E3D8D /* LaunchScreen.storyboard */; };
 		4949C9091CBE2EB2007E3D8D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4949C9021CBE2EB2007E3D8D /* UIView+Extension.m */; };
-		498BCFE41CC07AFC00E796EB /* QQQNSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BCFE11CC07AFC00E796EB /* QQQNSystemService.m */; };
-		498BCFE51CC07AFC00E796EB /* QQQNUploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BCFE31CC07AFC00E796EB /* QQQNUploadHelper.m */; };
+		499E22D71CF821C6003E569F /* QQQNSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 499E22D41CF821C6003E569F /* QQQNSystemService.m */; };
+		499E22D81CF821C6003E569F /* QQQNUploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 499E22D61CF821C6003E569F /* QQQNUploadHelper.m */; };
 		49D5A46D1CBF6643005CB24A /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D5A4481CBF6643005CB24A /* JKImagePickerController.strings */; };
 		49D5A46E1CBF6643005CB24A /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D5A44A1CBF6643005CB24A /* ImagesPicker.xcassets */; };
 		49D5A46F1CBF6643005CB24A /* JKAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D5A44E1CBF6643005CB24A /* JKAssets.m */; };
@@ -50,10 +50,10 @@
 		4949C8B41CBDF003007E3D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4949C9011CBE2EB2007E3D8D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "Category/UIView+Extension.h"; sourceTree = "<group>"; };
 		4949C9021CBE2EB2007E3D8D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "Category/UIView+Extension.m"; sourceTree = "<group>"; };
-		498BCFE01CC07AFC00E796EB /* QQQNSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNSystemService.h; sourceTree = "<group>"; };
-		498BCFE11CC07AFC00E796EB /* QQQNSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNSystemService.m; sourceTree = "<group>"; };
-		498BCFE21CC07AFC00E796EB /* QQQNUploadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNUploadHelper.h; sourceTree = "<group>"; };
-		498BCFE31CC07AFC00E796EB /* QQQNUploadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNUploadHelper.m; sourceTree = "<group>"; };
+		499E22D31CF821C6003E569F /* QQQNSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNSystemService.h; sourceTree = "<group>"; };
+		499E22D41CF821C6003E569F /* QQQNSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNSystemService.m; sourceTree = "<group>"; };
+		499E22D51CF821C6003E569F /* QQQNUploadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNUploadHelper.h; sourceTree = "<group>"; };
+		499E22D61CF821C6003E569F /* QQQNUploadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNUploadHelper.m; sourceTree = "<group>"; };
 		49D5A4491CBF6643005CB24A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
 		49D5A44A1CBF6643005CB24A /* ImagesPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPicker.xcassets; sourceTree = "<group>"; };
 		49D5A44B1CBF6643005CB24A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/JKImagePickerController.strings"; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 				4949C9021CBE2EB2007E3D8D /* UIView+Extension.m */,
 				4949C8A91CBDF003007E3D8D /* ViewController.h */,
 				4949C8AA1CBDF003007E3D8D /* ViewController.m */,
+				499E22D21CF821C6003E569F /* QQNUploadManager */,
 				49D5A4451CBF6643005CB24A /* QQCompose */,
 				4949C8AC1CBDF003007E3D8D /* Main.storyboard */,
 				4949C8AF1CBDF003007E3D8D /* Assets.xcassets */,
@@ -151,13 +152,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		499E22D21CF821C6003E569F /* QQNUploadManager */ = {
+			isa = PBXGroup;
+			children = (
+				499E22D31CF821C6003E569F /* QQQNSystemService.h */,
+				499E22D41CF821C6003E569F /* QQQNSystemService.m */,
+				499E22D51CF821C6003E569F /* QQQNUploadHelper.h */,
+				499E22D61CF821C6003E569F /* QQQNUploadHelper.m */,
+			);
+			name = QQNUploadManager;
+			path = QQCompose/QQNUploadManager;
+			sourceTree = "<group>";
+		};
 		49D5A4451CBF6643005CB24A /* QQCompose */ = {
 			isa = PBXGroup;
 			children = (
-				498BCFE01CC07AFC00E796EB /* QQQNSystemService.h */,
-				498BCFE11CC07AFC00E796EB /* QQQNSystemService.m */,
-				498BCFE21CC07AFC00E796EB /* QQQNUploadHelper.h */,
-				498BCFE31CC07AFC00E796EB /* QQQNUploadHelper.m */,
 				49D5A4671CBF6643005CB24A /* QQComposeAddPhotoViewCell.h */,
 				49D5A4681CBF6643005CB24A /* QQComposeAddPhotoViewCell.m */,
 				49D5A4691CBF6643005CB24A /* QQComposePhotosView.h */,
@@ -368,7 +377,7 @@
 				4949C8A81CBDF003007E3D8D /* AppDelegate.m in Sources */,
 				49D5A4741CBF6643005CB24A /* JKAssetsViewCell.m in Sources */,
 				49D5A47B1CBF6643005CB24A /* UIView+JKPicker.m in Sources */,
-				498BCFE51CC07AFC00E796EB /* QQQNUploadHelper.m in Sources */,
+				499E22D81CF821C6003E569F /* QQQNUploadHelper.m in Sources */,
 				49D5A4721CBF6643005CB24A /* JKAssetsGroupsView.m in Sources */,
 				49D5A47A1CBF6643005CB24A /* PhotoAlbumManager.m in Sources */,
 				4949C9091CBE2EB2007E3D8D /* UIView+Extension.m in Sources */,
@@ -378,7 +387,7 @@
 				49D5A4781CBF6643005CB24A /* JKPromptView.m in Sources */,
 				49D5A46F1CBF6643005CB24A /* JKAssets.m in Sources */,
 				4949C8A51CBDF003007E3D8D /* main.m in Sources */,
-				498BCFE41CC07AFC00E796EB /* QQQNSystemService.m in Sources */,
+				499E22D71CF821C6003E569F /* QQQNSystemService.m in Sources */,
 				49D5A4701CBF6643005CB24A /* JKAssetsCollectionFooterView.m in Sources */,
 				49D5A4731CBF6643005CB24A /* JKAssetsThumbnailView.m in Sources */,
 				49D5A4771CBF6643005CB24A /* JKPhotoBrowserCell.m in Sources */,

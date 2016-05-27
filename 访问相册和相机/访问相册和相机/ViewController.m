@@ -31,8 +31,8 @@
     
     //这个是从后台获取的 域名和上传凭证
     //注意上传凭证最好生成,时间片段的不用上传一个文件都要请求
-    self.domain = @"http://7xogbo.com2.z0.glb.qiniucdn.com";
-    self.token = @"rjUGOBr5yNdaHGNQjZpVrZrIcdnbb7V9Ta9O5Zfi:Hlj-d-yTJRQybMW_4li_7iVDNMU=:eyJzY29wZSI6InBpbmJhbiIsImRlYWRsaW5lIjoxNDYwNzM0MjM0fQ==";
+    self.domain = @"";
+    self.token = @"";
 }
 - (void)setUpPhotosView {
     self.photosView = [[QQComposePhotosView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 510)];
