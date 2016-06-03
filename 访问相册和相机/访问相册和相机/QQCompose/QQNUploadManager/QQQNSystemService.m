@@ -68,6 +68,9 @@
 }
 
 + (void)qq_uploadImages:(NSArray *)imageArray token:(NSString *)token domain:(NSString *)domain  progress:(void (^)(CGFloat))progress success:(void (^)(NSArray *))success failure:(void (^)())failure {
+    if (0 == imageArray.count) {
+        return;
+    }
     NSMutableArray *array = [NSMutableArray array];
     
     __block float totalProgress = 0.0f;

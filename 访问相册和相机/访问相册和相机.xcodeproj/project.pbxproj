@@ -133,12 +133,9 @@
 				4949C9021CBE2EB2007E3D8D /* UIView+Extension.m */,
 				4949C8A91CBDF003007E3D8D /* ViewController.h */,
 				4949C8AA1CBDF003007E3D8D /* ViewController.m */,
+				4949C8AC1CBDF003007E3D8D /* Main.storyboard */,
 				499E22D21CF821C6003E569F /* QQNUploadManager */,
 				49D5A4451CBF6643005CB24A /* QQCompose */,
-				4949C8AC1CBDF003007E3D8D /* Main.storyboard */,
-				4949C8AF1CBDF003007E3D8D /* Assets.xcassets */,
-				4949C8B11CBDF003007E3D8D /* LaunchScreen.storyboard */,
-				4949C8B41CBDF003007E3D8D /* Info.plist */,
 				4949C8A31CBDF003007E3D8D /* Supporting Files */,
 			);
 			path = "访问相册和相机";
@@ -147,6 +144,9 @@
 		4949C8A31CBDF003007E3D8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4949C8AF1CBDF003007E3D8D /* Assets.xcassets */,
+				4949C8B11CBDF003007E3D8D /* LaunchScreen.storyboard */,
+				4949C8B41CBDF003007E3D8D /* Info.plist */,
 				4949C8A41CBDF003007E3D8D /* main.m */,
 			);
 			name = "Supporting Files";

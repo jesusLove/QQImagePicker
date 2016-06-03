@@ -25,15 +25,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"长按调整图片位置";
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"上传" style:UIBarButtonItemStyleDone target:self action:@selector(updateImages)];
     [self setUpPhotosView];
     
     //这个是从后台获取的 域名和上传凭证
-    //注意上传凭证最好生成,时间片段的不用上传一个文件都要请求
+    //注意上传凭证最好生成时间片段的，不用每上传一个文件重新请求
+    //***********************这里申请域名和上传凭证****************************//
     self.domain = @"";
     self.token = @"";
+    //***************************************************//
 }
+/**
+ *  图片显示View
+ */
 - (void)setUpPhotosView {
     self.photosView = [[QQComposePhotosView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 510)];
     self.photosView.delegate = self;
@@ -41,6 +47,7 @@
     [self.view addSubview:self.photosView];
     self.photosView = self.photosView;
 }
+//添加图片
 - (void)addButtonClicked {
     JKImagePickerController *imagePicker = [[JKImagePickerController alloc] init];
     imagePicker.delegate = self;
@@ -86,7 +93,6 @@
         NSLog(@"上传失败");
     }];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
