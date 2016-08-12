@@ -613,15 +613,25 @@ static NSString *kJKAssetsFooterViewIdentifier = @"kJKAssetsFooterViewIdentifier
         return;
     }
     
+
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        UIImagePickerController *pickerController = [[UIImagePickerController alloc]init];
-        pickerController.allowsEditing = NO;
-        pickerController.delegate = self;
-        pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-        [self presentViewController:pickerController animated:YES completion:^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIImagePickerController *pickerController = [[UIImagePickerController alloc]init];
             
-        }];
+            pickerController.allowsEditing = NO;
+            pickerController.delegate = self;
+            pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            
+            [self presentViewController:pickerController animated:YES completion:^{
+                
+            }];
+        });
+        
     }
+
+    
+
 }
 
 - (void)didSelectItemAssetsViewCell:(JKAssetsViewCell *)assetsCell

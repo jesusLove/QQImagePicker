@@ -45,7 +45,6 @@
     self.photosView.delegate = self;
     self.photosView.addButton.hidden = NO;
     [self.view addSubview:self.photosView];
-    self.photosView = self.photosView;
 }
 //添加图片
 - (void)addButtonClicked {
@@ -55,8 +54,12 @@
     imagePicker.minimumNumberOfSelection = 1;
     imagePicker.maximumNumberOfSelection = 9;
     imagePicker.selectedAssetArray = self.photosView.assetsArray;
+    
+    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
     [self presentViewController:navigationController animated:YES completion:nil];
+    
+    
 }
 
 #pragma mark - JKImagePickerControllerDelegate
@@ -64,19 +67,18 @@
     [imagePicker dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)imagePickerController:(JKImagePickerController *)imagePicker didSelectAssets:(NSArray *)assets isSource:(BOOL)source {
-
-    self.photosView.assetsArray = [NSMutableArray arrayWithArray:assets];
+    self.photosView.assetsArray = (NSMutableArray *)assets;
     [imagePicker dismissViewControllerAnimated:YES completion:^{
         if (self.photosView.assetsArray.count > 0) {
-            //返回数据放到显示中
             self.photosView.addButton.hidden = NO;
         }
         [self.photosView.collectionView reloadData];
     }];
-    
 }
 - (void)imagePickerControllerDidCancel:(JKImagePickerController *)imagePicker {
+    
     [imagePicker dismissViewControllerAnimated:YES completion:nil];
+    
 }
 - (void)updateImages {
     NSMutableArray *upImages = [NSMutableArray array];

@@ -18,6 +18,7 @@
 
 static NSString *kPhotoCellIdentifier = @"kPhotoCellIdentifier";
 static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -34,53 +35,45 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
         [_collectionView registerClass:[QQComposePhotoViewCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
         [_collectionView registerClass:[QQComposeAddPhotoViewCell class] forCellWithReuseIdentifier:kAddPhotoCellIdentifier];
         [self addSubview:_collectionView];
+        
+        //添加长按手势
         UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongGesture:)];
         [_collectionView addGestureRecognizer:longGesture];
     }
     return self;
 }
+
 - (void)runInMainQueue:(void (^)())queue {
     dispatch_async(dispatch_get_main_queue(), queue);
 }
 - (void)runInGlobalQueue:(void(^)())queue {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), queue);
 }
+
 - (BOOL)endEditing:(BOOL)force {
     [super endEditing:false];
     [_collectionView endEditing:YES];
     return YES;
 }
-- (void)setAssetsArray:(NSMutableArray *)assetsArray {
-    _assetsArray = assetsArray;
-    NSMutableArray *tempBox = [NSMutableArray array];
-    for (JKAssets *asset in assetsArray) {
-        [tempBox addObject:asset.photo];
-    }
-    self.selectdPhotos = [NSArray arrayWithArray:tempBox];
-}
+
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width = ([UIScreen mainScreen].bounds.size.width - 30 - 10) / 3;
     return CGSizeMake(width, width);
-}
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%ld", (long)indexPath.row);
 }
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//    NSLog(@"%ld", (long)self.assetsArray.count);
     if (self.assetsArray.count == 9) {
         return 9;
     } else {
         return self.assetsArray.count + 1;
     }
-  
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (self.assetsArray.count != 0 && indexPath.row < self.assetsArray.count) {
         QQComposePhotoViewCell *cell = (QQComposePhotoViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kPhotoCellIdentifier forIndexPath:indexPath];
         cell.asset = self.assetsArray[indexPath.row];
@@ -93,8 +86,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
     self.addButton = cell.addButton;
     [self.addButton addTarget:self action:@selector(addButtonAction) forControlEvents:UIControlEventTouchUpInside];
     return cell;
-    
- 
 }
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
@@ -106,8 +97,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
         [self.assetsArray removeObject:objc];
         //将数据插入到目标位置
         [self.assetsArray insertObject:objc atIndex:destinationIndexPath.item];
-        NSLog(@" --- %ld", destinationIndexPath.item);
-
 }
 /**
  *  长按图片可以调整顺序
@@ -148,7 +137,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
         default:
             [self.collectionView cancelInteractiveMovement];
             break;
-        
     }
 }
 - (void)addButtonAction {
@@ -157,7 +145,6 @@ static NSString *kAddPhotoCellIdentifier = @"kAddPhotoCellIdentifier";
 - (void)deleteView:(id)sender {
     NSInteger deletedPhoto = ((UIButton *)sender).tag;
     [self.assetsArray removeObjectAtIndex:deletedPhoto];
-//    NSLog(@"删除tag: %ld", deletedPhoto);
     [self.collectionView reloadData];
 }
 @end

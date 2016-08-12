@@ -11,14 +11,25 @@
 
 
 @protocol QQComposePhotosViewDelegate <NSObject>
-
+/**
+ *  响应添加照片按键
+ */
 - (void)addButtonClicked;
 
 @end
 @interface QQComposePhotosView : UIView
 @property (nonatomic, strong) id <QQComposePhotosViewDelegate>delegate;
-@property (nonatomic, strong) NSMutableArray *assetsArray;
+
+/**
+ *  保存相册或相机返回的数据
+ */
+@property (nonatomic, strong) NSMutableArray *assetsArray; 
+/**
+ *  添加照片按键
+ */
 @property (nonatomic, strong) UIButton *addButton;
-@property (nonatomic, strong) NSArray *selectdPhotos;
+/**
+ *  用于显示九宫格
+ */
 @property (nonatomic, strong) UICollectionView *collectionView;
 @end
