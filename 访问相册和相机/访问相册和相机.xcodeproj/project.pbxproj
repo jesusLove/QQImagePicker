@@ -280,6 +280,7 @@
 				TargetAttributes = {
 					4949C89F1CBDF003007E3D8D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J56CFAB5W4;
 					};
 				};
 			};
@@ -515,6 +516,7 @@
 			baseConfigurationReference = 92ACB7D06FFB2EC331404194 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56CFAB5W4;
 				INFOPLIST_FILE = "访问相册和相机/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +530,7 @@
 			baseConfigurationReference = 7CAA75C641F87CF660FD5201 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56CFAB5W4;
 				INFOPLIST_FILE = "访问相册和相机/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
