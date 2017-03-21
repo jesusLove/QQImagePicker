@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		401EB0A01E8104920025009D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB09F1E8104920025009D /* main.m */; };
+		401EB0A31E8104920025009D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0A21E8104920025009D /* AppDelegate.m */; };
+		401EB0A61E8104920025009D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0A51E8104920025009D /* ViewController.m */; };
+		401EB0A91E8104920025009D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401EB0A71E8104920025009D /* Main.storyboard */; };
+		401EB0AB1E8104920025009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401EB0AA1E8104920025009D /* Assets.xcassets */; };
+		401EB0AE1E8104920025009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401EB0AC1E8104920025009D /* LaunchScreen.storyboard */; };
+		401EB0D61E8105850025009D /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 401EB0B71E8105850025009D /* JKImagePickerController.strings */; };
+		401EB0D71E8105850025009D /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401EB0B91E8105850025009D /* ImagesPicker.xcassets */; };
+		401EB0D81E8105850025009D /* JKAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0BD1E8105850025009D /* JKAssets.m */; };
+		401EB0D91E8105850025009D /* JKAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0BF1E8105850025009D /* JKAssetsCollectionFooterView.m */; };
+		401EB0DA1E8105850025009D /* JKAssetsGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0C11E8105850025009D /* JKAssetsGroupCell.m */; };
+		401EB0DB1E8105850025009D /* JKAssetsGroupsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0C31E8105850025009D /* JKAssetsGroupsView.m */; };
+		401EB0DC1E8105850025009D /* JKAssetsThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0C51E8105850025009D /* JKAssetsThumbnailView.m */; };
+		401EB0DD1E8105850025009D /* JKAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0C71E8105850025009D /* JKAssetsViewCell.m */; };
+		401EB0DE1E8105850025009D /* JKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0C91E8105850025009D /* JKImagePickerController.m */; };
+		401EB0DF1E8105850025009D /* JKPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0CB1E8105850025009D /* JKPhotoBrowser.m */; };
+		401EB0E01E8105850025009D /* JKPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0CD1E8105850025009D /* JKPhotoBrowserCell.m */; };
+		401EB0E11E8105850025009D /* JKPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0CF1E8105850025009D /* JKPromptView.m */; };
+		401EB0E21E8105850025009D /* JKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0D11E8105850025009D /* JKUtil.m */; };
+		401EB0E31E8105850025009D /* PhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0D31E8105850025009D /* PhotoAlbumManager.m */; };
+		401EB0E41E8105850025009D /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0D51E8105850025009D /* UIView+JKPicker.m */; };
+		401EB0EA1E81058F0025009D /* QQQNSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0E71E81058F0025009D /* QQQNSystemService.m */; };
+		401EB0EB1E81058F0025009D /* QQQNUploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0E91E81058F0025009D /* QQQNUploadHelper.m */; };
+		401EB0F31E8105B80025009D /* QQComposeAddPhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0EE1E8105B80025009D /* QQComposeAddPhotoViewCell.m */; };
+		401EB0F41E8105B80025009D /* QQComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0F01E8105B80025009D /* QQComposePhotosView.m */; };
+		401EB0F51E8105B80025009D /* QQComposePhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0F21E8105B80025009D /* QQComposePhotoViewCell.m */; };
+		401EB0F81E81067B0025009D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EB0F71E81067B0025009D /* UIView+Extension.m */; };
+		F30311E1284796B496A931F1 /* libPods-QQImagesPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8337311E422C21D1C99043FE /* libPods-QQImagesPicker.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		401EB09B1E8104920025009D /* QQImagesPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQImagesPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		401EB09F1E8104920025009D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		401EB0A11E8104920025009D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		401EB0A21E8104920025009D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		401EB0A41E8104920025009D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		401EB0A51E8104920025009D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		401EB0A81E8104920025009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		401EB0AA1E8104920025009D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		401EB0AD1E8104920025009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		401EB0AF1E8104920025009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401EB0B81E8105850025009D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
+		401EB0B91E8105850025009D /* ImagesPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPicker.xcassets; sourceTree = "<group>"; };
+		401EB0BA1E8105850025009D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/JKImagePickerController.strings"; sourceTree = "<group>"; };
+		401EB0BC1E8105850025009D /* JKAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssets.h; sourceTree = "<group>"; };
+		401EB0BD1E8105850025009D /* JKAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssets.m; sourceTree = "<group>"; };
+		401EB0BE1E8105850025009D /* JKAssetsCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssetsCollectionFooterView.h; sourceTree = "<group>"; };
+		401EB0BF1E8105850025009D /* JKAssetsCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssetsCollectionFooterView.m; sourceTree = "<group>"; };
+		401EB0C01E8105850025009D /* JKAssetsGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssetsGroupCell.h; sourceTree = "<group>"; };
+		401EB0C11E8105850025009D /* JKAssetsGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssetsGroupCell.m; sourceTree = "<group>"; };
+		401EB0C21E8105850025009D /* JKAssetsGroupsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssetsGroupsView.h; sourceTree = "<group>"; };
+		401EB0C31E8105850025009D /* JKAssetsGroupsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssetsGroupsView.m; sourceTree = "<group>"; };
+		401EB0C41E8105850025009D /* JKAssetsThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssetsThumbnailView.h; sourceTree = "<group>"; };
+		401EB0C51E8105850025009D /* JKAssetsThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssetsThumbnailView.m; sourceTree = "<group>"; };
+		401EB0C61E8105850025009D /* JKAssetsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAssetsViewCell.h; sourceTree = "<group>"; };
+		401EB0C71E8105850025009D /* JKAssetsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAssetsViewCell.m; sourceTree = "<group>"; };
+		401EB0C81E8105850025009D /* JKImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImagePickerController.h; sourceTree = "<group>"; };
+		401EB0C91E8105850025009D /* JKImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKImagePickerController.m; sourceTree = "<group>"; };
+		401EB0CA1E8105850025009D /* JKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPhotoBrowser.h; sourceTree = "<group>"; };
+		401EB0CB1E8105850025009D /* JKPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPhotoBrowser.m; sourceTree = "<group>"; };
+		401EB0CC1E8105850025009D /* JKPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPhotoBrowserCell.h; sourceTree = "<group>"; };
+		401EB0CD1E8105850025009D /* JKPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPhotoBrowserCell.m; sourceTree = "<group>"; };
+		401EB0CE1E8105850025009D /* JKPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPromptView.h; sourceTree = "<group>"; };
+		401EB0CF1E8105850025009D /* JKPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPromptView.m; sourceTree = "<group>"; };
+		401EB0D01E8105850025009D /* JKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUtil.h; sourceTree = "<group>"; };
+		401EB0D11E8105850025009D /* JKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUtil.m; sourceTree = "<group>"; };
+		401EB0D21E8105850025009D /* PhotoAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumManager.h; sourceTree = "<group>"; };
+		401EB0D31E8105850025009D /* PhotoAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumManager.m; sourceTree = "<group>"; };
+		401EB0D41E8105850025009D /* UIView+JKPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKPicker.h"; sourceTree = "<group>"; };
+		401EB0D51E8105850025009D /* UIView+JKPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKPicker.m"; sourceTree = "<group>"; };
+		401EB0E61E81058F0025009D /* QQQNSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNSystemService.h; sourceTree = "<group>"; };
+		401EB0E71E81058F0025009D /* QQQNSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNSystemService.m; sourceTree = "<group>"; };
+		401EB0E81E81058F0025009D /* QQQNUploadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQNUploadHelper.h; sourceTree = "<group>"; };
+		401EB0E91E81058F0025009D /* QQQNUploadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQNUploadHelper.m; sourceTree = "<group>"; };
+		401EB0ED1E8105B80025009D /* QQComposeAddPhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQComposeAddPhotoViewCell.h; sourceTree = "<group>"; };
+		401EB0EE1E8105B80025009D /* QQComposeAddPhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQComposeAddPhotoViewCell.m; sourceTree = "<group>"; };
+		401EB0EF1E8105B80025009D /* QQComposePhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQComposePhotosView.h; sourceTree = "<group>"; };
+		401EB0F01E8105B80025009D /* QQComposePhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQComposePhotosView.m; sourceTree = "<group>"; };
+		401EB0F11E8105B80025009D /* QQComposePhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQComposePhotoViewCell.h; sourceTree = "<group>"; };
+		401EB0F21E8105B80025009D /* QQComposePhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQComposePhotoViewCell.m; sourceTree = "<group>"; };
+		401EB0F61E81067B0025009D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		401EB0F71E81067B0025009D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8337311E422C21D1C99043FE /* libPods-QQImagesPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQImagesPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B46361EB68CDD96E0CAF1B1 /* Pods-QQImagesPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQImagesPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQImagesPicker/Pods-QQImagesPicker.release.xcconfig"; sourceTree = "<group>"; };
+		AD0114BAF97CFD969F2B6916 /* Pods-QQImagesPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQImagesPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQImagesPicker/Pods-QQImagesPicker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		401EB0981E8104920025009D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30311E1284796B496A931F1 /* libPods-QQImagesPicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FECF44B325D6A7EEEF444BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8337311E422C21D1C99043FE /* libPods-QQImagesPicker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		401EB0921E8104920025009D = {
+			isa = PBXGroup;
+			children = (
+				401EB09D1E8104920025009D /* QQImagesPicker */,
+				401EB09C1E8104920025009D /* Products */,
+				941C6D56EA8900CBF964B45F /* Pods */,
+				1FECF44B325D6A7EEEF444BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		401EB09C1E8104920025009D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				401EB09B1E8104920025009D /* QQImagesPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		401EB09D1E8104920025009D /* QQImagesPicker */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0A11E8104920025009D /* AppDelegate.h */,
+				401EB0A21E8104920025009D /* AppDelegate.m */,
+				401EB0A41E8104920025009D /* ViewController.h */,
+				401EB0A51E8104920025009D /* ViewController.m */,
+				401EB0EC1E8105B80025009D /* QQCompose */,
+				401EB0E51E81058F0025009D /* QQNUploadManager */,
+				401EB0B51E8105850025009D /* ImagePicker */,
+				401EB09E1E8104920025009D /* Supporting Files */,
+			);
+			path = QQImagesPicker;
+			sourceTree = "<group>";
+		};
+		401EB09E1E8104920025009D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0F61E81067B0025009D /* UIView+Extension.h */,
+				401EB0F71E81067B0025009D /* UIView+Extension.m */,
+				401EB0A71E8104920025009D /* Main.storyboard */,
+				401EB0AA1E8104920025009D /* Assets.xcassets */,
+				401EB0AC1E8104920025009D /* LaunchScreen.storyboard */,
+				401EB0AF1E8104920025009D /* Info.plist */,
+				401EB09F1E8104920025009D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		401EB0B51E8105850025009D /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0B61E8105850025009D /* Assets */,
+				401EB0BB1E8105850025009D /* Classes */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		401EB0B61E8105850025009D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0B71E8105850025009D /* JKImagePickerController.strings */,
+				401EB0B91E8105850025009D /* ImagesPicker.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		401EB0BB1E8105850025009D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0BC1E8105850025009D /* JKAssets.h */,
+				401EB0BD1E8105850025009D /* JKAssets.m */,
+				401EB0BE1E8105850025009D /* JKAssetsCollectionFooterView.h */,
+				401EB0BF1E8105850025009D /* JKAssetsCollectionFooterView.m */,
+				401EB0C01E8105850025009D /* JKAssetsGroupCell.h */,
+				401EB0C11E8105850025009D /* JKAssetsGroupCell.m */,
+				401EB0C21E8105850025009D /* JKAssetsGroupsView.h */,
+				401EB0C31E8105850025009D /* JKAssetsGroupsView.m */,
+				401EB0C41E8105850025009D /* JKAssetsThumbnailView.h */,
+				401EB0C51E8105850025009D /* JKAssetsThumbnailView.m */,
+				401EB0C61E8105850025009D /* JKAssetsViewCell.h */,
+				401EB0C71E8105850025009D /* JKAssetsViewCell.m */,
+				401EB0C81E8105850025009D /* JKImagePickerController.h */,
+				401EB0C91E8105850025009D /* JKImagePickerController.m */,
+				401EB0CA1E8105850025009D /* JKPhotoBrowser.h */,
+				401EB0CB1E8105850025009D /* JKPhotoBrowser.m */,
+				401EB0CC1E8105850025009D /* JKPhotoBrowserCell.h */,
+				401EB0CD1E8105850025009D /* JKPhotoBrowserCell.m */,
+				401EB0CE1E8105850025009D /* JKPromptView.h */,
+				401EB0CF1E8105850025009D /* JKPromptView.m */,
+				401EB0D01E8105850025009D /* JKUtil.h */,
+				401EB0D11E8105850025009D /* JKUtil.m */,
+				401EB0D21E8105850025009D /* PhotoAlbumManager.h */,
+				401EB0D31E8105850025009D /* PhotoAlbumManager.m */,
+				401EB0D41E8105850025009D /* UIView+JKPicker.h */,
+				401EB0D51E8105850025009D /* UIView+JKPicker.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		401EB0E51E81058F0025009D /* QQNUploadManager */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0E61E81058F0025009D /* QQQNSystemService.h */,
+				401EB0E71E81058F0025009D /* QQQNSystemService.m */,
+				401EB0E81E81058F0025009D /* QQQNUploadHelper.h */,
+				401EB0E91E81058F0025009D /* QQQNUploadHelper.m */,
+			);
+			path = QQNUploadManager;
+			sourceTree = "<group>";
+		};
+		401EB0EC1E8105B80025009D /* QQCompose */ = {
+			isa = PBXGroup;
+			children = (
+				401EB0ED1E8105B80025009D /* QQComposeAddPhotoViewCell.h */,
+				401EB0EE1E8105B80025009D /* QQComposeAddPhotoViewCell.m */,
+				401EB0EF1E8105B80025009D /* QQComposePhotosView.h */,
+				401EB0F01E8105B80025009D /* QQComposePhotosView.m */,
+				401EB0F11E8105B80025009D /* QQComposePhotoViewCell.h */,
+				401EB0F21E8105B80025009D /* QQComposePhotoViewCell.m */,
+			);
+			path = QQCompose;
+			sourceTree = "<group>";
+		};
+		941C6D56EA8900CBF964B45F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD0114BAF97CFD969F2B6916 /* Pods-QQImagesPicker.debug.xcconfig */,
+				8B46361EB68CDD96E0CAF1B1 /* Pods-QQImagesPicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		401EB09A1E8104920025009D /* QQImagesPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401EB0B21E8104920025009D /* Build configuration list for PBXNativeTarget "QQImagesPicker" */;
+			buildPhases = (
+				DFE5E659E29C4E981383DD7F /* [CP] Check Pods Manifest.lock */,
+				401EB0971E8104920025009D /* Sources */,
+				401EB0981E8104920025009D /* Frameworks */,
+				401EB0991E8104920025009D /* Resources */,
+				FAEA77223E2E7FCBCFDE18E4 /* [CP] Embed Pods Frameworks */,
+				63DC1A6DEF77D7BEAB119CDB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQImagesPicker;
+			productName = QQImagesPicker;
+			productReference = 401EB09B1E8104920025009D /* QQImagesPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		401EB0931E8104920025009D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = baisiChina;
+				TargetAttributes = {
+					401EB09A1E8104920025009D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8PF3YDNV98;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 401EB0961E8104920025009D /* Build configuration list for PBXProject "QQImagesPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 401EB0921E8104920025009D;
+			productRefGroup = 401EB09C1E8104920025009D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				401EB09A1E8104920025009D /* QQImagesPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		401EB0991E8104920025009D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401EB0AE1E8104920025009D /* LaunchScreen.storyboard in Resources */,
+				401EB0D61E8105850025009D /* JKImagePickerController.strings in Resources */,
+				401EB0AB1E8104920025009D /* Assets.xcassets in Resources */,
+				401EB0A91E8104920025009D /* Main.storyboard in Resources */,
+				401EB0D71E8105850025009D /* ImagesPicker.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63DC1A6DEF77D7BEAB119CDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQImagesPicker/Pods-QQImagesPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE5E659E29C4E981383DD7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEA77223E2E7FCBCFDE18E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQImagesPicker/Pods-QQImagesPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		401EB0971E8104920025009D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401EB0E31E8105850025009D /* PhotoAlbumManager.m in Sources */,
+				401EB0F31E8105B80025009D /* QQComposeAddPhotoViewCell.m in Sources */,
+				401EB0F81E81067B0025009D /* UIView+Extension.m in Sources */,
+				401EB0A61E8104920025009D /* ViewController.m in Sources */,
+				401EB0DC1E8105850025009D /* JKAssetsThumbnailView.m in Sources */,
+				401EB0E41E8105850025009D /* UIView+JKPicker.m in Sources */,
+				401EB0D91E8105850025009D /* JKAssetsCollectionFooterView.m in Sources */,
+				401EB0DD1E8105850025009D /* JKAssetsViewCell.m in Sources */,
+				401EB0E21E8105850025009D /* JKUtil.m in Sources */,
+				401EB0D81E8105850025009D /* JKAssets.m in Sources */,
+				401EB0DF1E8105850025009D /* JKPhotoBrowser.m in Sources */,
+				401EB0E01E8105850025009D /* JKPhotoBrowserCell.m in Sources */,
+				401EB0E11E8105850025009D /* JKPromptView.m in Sources */,
+				401EB0F41E8105B80025009D /* QQComposePhotosView.m in Sources */,
+				401EB0A31E8104920025009D /* AppDelegate.m in Sources */,
+				401EB0A01E8104920025009D /* main.m in Sources */,
+				401EB0EA1E81058F0025009D /* QQQNSystemService.m in Sources */,
+				401EB0F51E8105B80025009D /* QQComposePhotoViewCell.m in Sources */,
+				401EB0DB1E8105850025009D /* JKAssetsGroupsView.m in Sources */,
+				401EB0EB1E81058F0025009D /* QQQNUploadHelper.m in Sources */,
+				401EB0DE1E8105850025009D /* JKImagePickerController.m in Sources */,
+				401EB0DA1E8105850025009D /* JKAssetsGroupCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		401EB0A71E8104920025009D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				401EB0A81E8104920025009D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		401EB0AC1E8104920025009D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				401EB0AD1E8104920025009D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		401EB0B71E8105850025009D /* JKImagePickerController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				401EB0B81E8105850025009D /* en */,
+				401EB0BA1E8105850025009D /* zh-Hans */,
+			);
+			name = JKImagePickerController.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		401EB0B01E8104920025009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		401EB0B11E8104920025009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		401EB0B31E8104920025009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0114BAF97CFD969F2B6916 /* Pods-QQImagesPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8PF3YDNV98;
+				INFOPLIST_FILE = QQImagesPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huizhong.QQImagesPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		401EB0B41E8104920025009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B46361EB68CDD96E0CAF1B1 /* Pods-QQImagesPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8PF3YDNV98;
+				INFOPLIST_FILE = QQImagesPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huizhong.QQImagesPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		401EB0961E8104920025009D /* Build configuration list for PBXProject "QQImagesPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401EB0B01E8104920025009D /* Debug */,
+				401EB0B11E8104920025009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		401EB0B21E8104920025009D /* Build configuration list for PBXNativeTarget "QQImagesPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401EB0B31E8104920025009D /* Debug */,
+				401EB0B41E8104920025009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 401EB0931E8104920025009D /* Project object */;
+}
